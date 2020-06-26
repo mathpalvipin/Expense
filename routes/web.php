@@ -24,3 +24,11 @@ Route::post('/store', 'HomeController@store');
 Route::get('/get', 'HomeController@get');
 Route::get('/del/{id}', 'HomeController@del');
 Route::post('/edit', 'HomeController@edit');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
